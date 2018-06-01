@@ -54,7 +54,7 @@ You can choose difficulty by using this parameter (from 1 to 3):
 sheep_and_crocodile --difficulty=1
 ```
 
-By default difficulty is 1;
+By default difficulty is 1. The more value the harder to play (alias for 3 is 'nightmare').
 
 ### --emoji
 
