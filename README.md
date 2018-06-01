@@ -56,6 +56,20 @@ sheep_and_crocodile --difficulty=1
 
 By default difficulty is 1. The more value the harder to play (alias for 3 is 'nightmare').
 
+### --water
+
+If you don't want water you can disable it this way:
+
+```commandline
+sheep_and_crocodile --water=0
+```
+
+or just:
+
+```commandline
+sheep_and_crocodile --no-water
+```
+
 ### --emoji
 
 If you don't want emoji graphics you can disable it this way:

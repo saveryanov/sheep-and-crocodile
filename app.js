@@ -18,11 +18,16 @@ if (optimist.argv.help) {
 
 var gameIterationLength = 100;
 switch(optimist.argv.difficulty) {
-    case 2: gameIterationLength = 65; break;
+    case 2: gameIterationLength = 90; break;
     case 'nightmare':
-    case 3: gameIterationLength = 25; break;
+    case 3: gameIterationLength = 50; break;
     default:
-    case 1: gameIterationLength = 100; break;
+    case 1: gameIterationLength = 110; break;
+}
+
+var waterEnabled = true;
+if (optimist.argv.water !== undefined) {
+    waterEnabled = optimist.argv.water ? true : false;
 }
 
 var enableEmoji = true;
@@ -49,7 +54,7 @@ var map;
 
 function generateMap() {
     map = initArray([width, height], 0);
-
+    
     var world = new WorldmapGenerator({
         size: {
             width: width,
@@ -73,6 +78,9 @@ function generateMap() {
     for (let y = 0; y < height; y++) {
         for (let x = 0; x < width; x++) {
             map[x][y] = world.map[x][y].name;
+            if (!waterEnabled && world.map[x][y].name == 'water') {
+                map[x][y] = 'grass';
+            }
         }
     }
 
