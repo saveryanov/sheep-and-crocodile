@@ -36,11 +36,11 @@ if (optimist.argv.emoji !== undefined) {
 }
 
 var sprites = {
-    player: enableEmoji ? emoji.get('sheep') : '@'.white.bold,
-    enemy: enableEmoji ? emoji.get('crocodile') : '#'.red.bold,
-    grass: enableEmoji ? emoji.get('seedling') : ' ',
-    water: enableEmoji ? emoji.get('wavy_dash') : '~'.cyan,
-    food: enableEmoji ? emoji.get('four_leaf_clover') : '$'.bgYellow
+    player: enableEmoji ? emoji.get('sheep') : '@@'.white.bold,
+    enemy: enableEmoji ? emoji.get('crocodile') : '##'.black.bold,
+    grass: enableEmoji ? emoji.get('seedling') : '  ',
+    water: enableEmoji ? emoji.get('wavy_dash') : '~~'.cyan,
+    food: enableEmoji ? emoji.get('four_leaf_clover') : '% '.bgYellow
 }
 
 const width = 20, height = 20;
@@ -218,7 +218,7 @@ function renderScreen(noReturn = false) {
         }
     }
     if (!noReturn) {
-        process.stdout.moveCursor(-width, -height);
+        process.stdout.moveCursor(enableEmoji ? -width : -width*2, -height);
     }
 }
 function endGame(reason = 'exit') {
