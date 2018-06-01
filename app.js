@@ -36,11 +36,11 @@ if (optimist.argv.emoji !== undefined) {
 }
 
 var sprites = {
-    player: enableEmoji ? emoji.get('sheep') : '@@'.white.bold,
-    enemy: enableEmoji ? emoji.get('crocodile') : '##'.black.bold,
-    grass: enableEmoji ? emoji.get('seedling') : '  ',
+    player: enableEmoji ? emoji.get('sheep') : '@>'.white.bold,
+    enemy: enableEmoji ? emoji.get('crocodile') : 'X<'.black.bold,
+    grass: enableEmoji ? emoji.get('seedling') : 'vV'.grey.dim,
     water: enableEmoji ? emoji.get('wavy_dash') : '~~'.cyan,
-    food: enableEmoji ? emoji.get('four_leaf_clover') : '% '.bgYellow
+    food: enableEmoji ? emoji.get('four_leaf_clover') : '~%'.bgYellow
 }
 
 const width = 20, height = 20;

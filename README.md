@@ -90,7 +90,8 @@ And you will see something like this:
 
 Where:
 
-* \## - crocodile;
-* @@ - sheep;
-* % - clover;
-* ~ - water.
+* \X< - crocodile;
+* @> - sheep;
+* ~% - clover;
+* vV - grass;
+* ~~ - water.
