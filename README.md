@@ -42,6 +42,10 @@ sheepcroc
 
 ## Params
 
+### --help
+
+Prints rules and controls info.
+
 ### --difficulty
 
 You can choose difficulty by using this parameter (from 1 to 3):

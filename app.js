@@ -7,6 +7,14 @@ var readline = require('readline'),
     
 require('colors');
 
+if (optimist.argv.help) {
+    console.log(`Use arrows or WSAD buttons to control a sheep (${emoji.get('sheep')}).`);
+    console.log(`Your goal is eat as much clovers (${emoji.get('four_leaf_clover')}) as you can.`);
+    console.log(`Sheep eats clovers, crocodile (${emoji.get('crocodile')}) eats sheep. The crocodile will pursue the sheep until it is eaten by it.`);
+    console.log(`By the way there are some random water on the map. A crocodile can swim, but a sheep does not.`);
+    console.log(`You can exit game by Q button.`);
+    process.exit(0);
+}
 
 var gameIterationLength = 100;
 switch(optimist.argv.difficulty) {

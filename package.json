@@ -1,6 +1,6 @@
 {
   "name": "sheep-and-crocodile",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Console game for nodejs about a sheep that runs away from a crocodile.",
   "main": "app.js",
   "dependencies": {
