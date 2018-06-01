@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var readline = require('readline'),
     optimist = require('optimist'),
     emoji = require('node-emoji'),
