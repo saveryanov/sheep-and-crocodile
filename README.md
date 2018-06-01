@@ -73,6 +73,6 @@ And you will see something like this:
 Where:
 
 * \# - crocodile;
-* @ - sheep; 
+* @ - sheep;
 * $ - clover;
 * ~ - water.
